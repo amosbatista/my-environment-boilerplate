@@ -1,7 +1,7 @@
 echo "Welcome my developer boileplate. This script will install all my favorite program."
 echo "If it ask admin credentials, please, inform it above:"
 
-#Preparations
+#Repositories and utilities programs
 #VSCode
 sudo apt install curl
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -25,5 +25,5 @@ sudo apt-get update
 
 #The install commands
 sudo apt install nodejs npm
-sudo apt-get install code terminator filezilla gimp gimp-gmic gmic gimp-plugin-registry git
+sudo apt-get install code terminator filezilla gimp git
 snap install spotify
