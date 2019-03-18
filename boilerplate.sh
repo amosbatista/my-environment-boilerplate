@@ -19,6 +19,23 @@ wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 #gimp
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 
+#postman
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+sudo tar -xzf postman.tar.gz -C /opt
+rm postman.tar.gz
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+
+cat > ~/.local/share/applications/postman.desktop <<EOL
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Exec=postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;
+EOL
+
 #The update
 sudo apt update
 sudo apt-get update
