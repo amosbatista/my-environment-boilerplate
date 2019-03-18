@@ -23,30 +23,7 @@ sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 sudo apt update
 sudo apt-get update
 
-#NodeJs
-sudo apt install nodejs
-
-#npm
-sudo apt install npm
-
-#vsSource
-sudo apt-get install code
-
-#terminator
-sudo apt-get install terminator
-
-#docker
-#docker-compose
-
-#filezilla
-sudo apt-get install filezilla
-
-#gimp
-sudo apt-get install gimp gimp-gmic gmic
-sudo apt-get install gimp-plugin-registry
-
-#spotify (I like to work with music)
+#The install commands
+sudo apt install nodejs npm
+sudo apt-get install code terminator filezilla gimp gimp-gmic gmic gimp-plugin-registry git
 snap install spotify
-
-#git
-sudo apt-get install git
